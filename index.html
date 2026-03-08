@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Mukesh Kumar | Python Developer & Data Analyst</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+<title>Mukesh Kumar | Python Developer & Data Analyst</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -35,22 +37,14 @@ transition:transform .3s;
 transform:scale(1.1);
 }
 
-.skill-mf .progress{
-margin:.5rem 0 1.2rem 0;
-height:.7rem;
-}
-
-.skill-mf .progress-bar{
-background:#ffbd39;
-}
-
 </style>
 
-  </head>
+</head>
 
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar site-navbar-target">
+
 <div class="container">
 
 <a class="navbar-brand">Mukesh Kumar</a>
@@ -59,18 +53,21 @@ background:#ffbd39;
 
 <li class="nav-item"><a href="#home-section" class="nav-link">Home</a></li>
 <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
-<li class="nav-item"><a href="#resume-section" class="nav-link">Resume</a></li>
+<li class="nav-item"><a href="#tech-section" class="nav-link">Tech Stack</a></li>
+<li class="nav-item"><a href="#resume-section" class="nav-link">Education</a></li>
 <li class="nav-item"><a href="#project-section" class="nav-link">Projects</a></li>
+<li class="nav-item"><a href="#certification-section" class="nav-link">Certifications</a></li>
 <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
 
 </ul>
 
 </div>
+
 </nav>
 
 <section id="home-section" class="hero">
 
-<div class="container">
+<div class="container text-center">
 
 <h1>Hi, I'm <span>Mukesh Kumar</span></h1>
 
@@ -85,17 +82,23 @@ const typingTexts = [
 "Data Analytics Enthusiast"
 ];
 
-let index=0;
+let i=0;
 
 function typing(){
-document.getElementById("typing-animation").innerHTML=typingTexts[index];
-index=(index+1)%typingTexts.length;
+
+document.getElementById("typing-animation").innerHTML=typingTexts[i];
+
+i=(i+1)%typingTexts.length;
+
 setTimeout(typing,2000);
+
 }
 
 typing();
 
 </script>
+
+<br>
 
 <h2>Python Developer & Data Analyst</h2>
 
@@ -111,7 +114,6 @@ typing();
 
 </section>
 
-
 <section id="about-section">
 
 <div class="container">
@@ -120,36 +122,51 @@ typing();
 
 <p>
 
-Python Developer and Data Analyst with hands-on experience in data analysis, exploratory data analysis (EDA), backend API development and building real-world data driven applications.
+Python Developer and Data Analyst with strong experience in data analysis, exploratory data analysis (EDA), backend API development and building real world data driven applications.
 
 Currently pursuing a Master's degree in Georesource and Geoenergy at Politecnico di Torino, Italy.
 
-Experienced in Python, SQL, FastAPI, Streamlit, Pandas and data visualization tools to transform raw data into meaningful insights and scalable applications.
+Experienced in Python, SQL, FastAPI, Streamlit, Pandas and visualization tools to transform raw data into meaningful insights and build scalable data solutions across hospitality, healthcare and retail domains.
 
 </p>
-
-<h3>Skills</h3>
-
-<ul>
-
-<li>Python</li>
-<li>SQL</li>
-<li>PostgreSQL</li>
-<li>Pandas & NumPy</li>
-<li>Data Cleaning & EDA</li>
-<li>Statistics for Data Analysis</li>
-<li>FastAPI</li>
-<li>Streamlit</li>
-<li>Power BI</li>
-<li>Matplotlib & Seaborn</li>
-<li>Git & GitHub</li>
-
-</ul>
 
 </div>
 
 </section>
 
+<section id="tech-section">
+
+<div class="container">
+
+<h2 class="text-center">Tech Stack</h2>
+
+<div class="row text-center">
+
+<div class="col-md-3">
+<h4>Languages</h4>
+<p>Python, SQL, Bash</p>
+</div>
+
+<div class="col-md-3">
+<h4>Libraries</h4>
+<p>Pandas, NumPy, Matplotlib, Seaborn</p>
+</div>
+
+<div class="col-md-3">
+<h4>Frameworks</h4>
+<p>FastAPI, Streamlit</p>
+</div>
+
+<div class="col-md-3">
+<h4>Tools</h4>
+<p>Git, GitHub, Power BI, VS Code</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 <section id="resume-section">
 
@@ -167,20 +184,18 @@ Experienced in Python, SQL, FastAPI, Streamlit, Pandas and data visualization to
 
 </section>
 
-
 <section id="project-section">
 
 <div class="container">
 
 <h2>Projects</h2>
 
-
 <h3>AtliQ Hotels Data Analysis</h3>
 
 <p>
 
-Hospitality domain data analytics project analyzing hotel datasets using Python.
-Performed data cleaning, exploratory data analysis and visualization to uncover trends and provide insights for hotel revenue and operations.
+Hospitality domain analytics project analyzing hotel datasets using Python.
+Performed data cleaning, exploratory data analysis and visualization to uncover trends and improve decision making.
 
 </p>
 
@@ -188,13 +203,12 @@ Performed data cleaning, exploratory data analysis and visualization to uncover 
 
 <hr>
 
-
 <h3>Expense Tracking System (FastAPI + Streamlit)</h3>
 
 <p>
 
-Full stack expense tracking system using FastAPI backend and Streamlit frontend with MySQL database.
-Tracks expenses and visualizes spending patterns using Pandas and Python.
+Full stack expense tracking application built using FastAPI backend and Streamlit frontend with MySQL database.
+Tracks daily spending and visualizes financial insights using Pandas.
 
 </p>
 
@@ -202,13 +216,11 @@ Tracks expenses and visualizes spending patterns using Pandas and Python.
 
 <hr>
 
-
 <h3>Medical Data Extraction System</h3>
 
 <p>
 
-Python based system that extracts structured data from scanned prescriptions using OpenCV, regex and custom Python classes.
-Includes image preprocessing and automated testing using pytest.
+Python system that extracts structured medical information from scanned prescriptions using OpenCV, Regex and custom Python classes.
 
 </p>
 
@@ -216,13 +228,11 @@ Includes image preprocessing and automated testing using pytest.
 
 <hr>
 
-
 <h3>Customer Shopping Behavior Analysis</h3>
 
 <p>
 
-End-to-end analytics project using SQL, Python and Power BI to analyze retail transaction datasets.
-Provides insights into customer segments, purchasing patterns and product performance.
+End to end analytics project using SQL, Python and Power BI to analyze retail transactions and identify customer behaviour insights.
 
 </p>
 
@@ -232,12 +242,51 @@ Provides insights into customer segments, purchasing patterns and product perfor
 
 </section>
 
+<section id="certification-section">
+
+<div class="container text-center">
+
+<h2>Certifications</h2>
+
+<h4>Python: Beginner to Advance for Data Professionals</h4>
+
+<p>Python programming certification with hands on projects in hospitality analytics and expense tracking systems.</p>
+
+<a href="https://codebasics.io/certificate/CB-48-484522">View Certificate</a>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container text-center">
+
+<h2>GitHub Stats</h2>
+
+<img src="https://github-readme-stats.vercel.app/api?username=mukeshkd58&show_icons=true&theme=dark">
+
+<br><br>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mukeshkd58&layout=compact&theme=dark">
+
+</div>
+
+</section>
 
 <section id="contact-section">
 
-<div class="container">
+<div class="container text-center">
 
 <h2>Contact</h2>
+
+<h3>Open to Data Analyst / Python Developer Opportunities</h3>
+
+<p>
+
+Currently pursuing Master's at Politecnico di Torino and actively seeking internship or entry level roles in Data Analytics or Python Development.
+
+</p>
 
 <p>Location: Turin, Italy</p>
 
@@ -256,12 +305,11 @@ Provides insights into customer segments, purchasing patterns and product perfor
 
 </section>
 
-
 <footer>
 
-<div class="container">
+<div class="container text-center">
 
-<p>© 2026 Mukesh Kumar | Portfolio</p>
+<p>© 2026 Mukesh Kumar Portfolio</p>
 
 </div>
 
