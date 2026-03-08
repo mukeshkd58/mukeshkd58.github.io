@@ -1,40 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <title>Mukesh Kumar | Python Developer & Data Analyst</title>
 
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/magnific-popup.css">
-<link rel="stylesheet" href="css/aos.css">
-<link rel="stylesheet" href="css/ionicons.min.css">
-<link rel="stylesheet" href="css/flaticon.css">
-<link rel="stylesheet" href="css/icomoon.css">
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
 <style>
 
-#typing-animation{
-font-size:30px;
-font-weight:bold;
+body{
+font-family:Poppins;
+margin:0;
+background:#0f172a;
 color:white;
 }
 
-.zoom-effect{
-overflow:hidden;
-transition:transform .3s;
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:#020617;
+position:sticky;
+top:0;
 }
 
-.zoom-effect:hover{
-transform:scale(1.1);
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.btn{
+background:#6366f1;
+padding:12px 25px;
+border-radius:6px;
+text-decoration:none;
+color:white;
+margin:10px;
+display:inline-block;
+}
+
+.section{
+padding:80px 10%;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+}
+
+.project{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+}
+
+img{
+max-width:100%;
 }
 
 </style>
@@ -43,80 +95,43 @@ transform:scale(1.1);
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar site-navbar-target">
+<nav>
 
-<div class="container">
+<h3>Mukesh Kumar</h3>
 
-<a class="navbar-brand">Mukesh Kumar</a>
+<div>
 
-<ul class="navbar-nav ml-auto">
-
-<li class="nav-item"><a href="#home-section" class="nav-link">Home</a></li>
-<li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
-<li class="nav-item"><a href="#tech-section" class="nav-link">Tech Stack</a></li>
-<li class="nav-item"><a href="#resume-section" class="nav-link">Education</a></li>
-<li class="nav-item"><a href="#project-section" class="nav-link">Projects</a></li>
-<li class="nav-item"><a href="#certification-section" class="nav-link">Certifications</a></li>
-<li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
-
-</ul>
+<a href="#about">About</a>
+<a href="#skills">Tech Stack</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
 
 </div>
 
 </nav>
 
-<section id="home-section" class="hero">
 
-<div class="container text-center">
+<section class="hero">
 
-<h1>Hi, I'm <span>Mukesh Kumar</span></h1>
+<h1>Hi I'm Mukesh Kumar</h1>
 
-<span id="typing-animation"></span>
-
-<script>
-
-const typingTexts = [
-"Python Developer",
-"Data Analyst",
-"FastAPI Backend Developer",
-"Data Analytics Enthusiast"
-];
-
-let i=0;
-
-function typing(){
-
-document.getElementById("typing-animation").innerHTML=typingTexts[i];
-
-i=(i+1)%typingTexts.length;
-
-setTimeout(typing,2000);
-
-}
-
-typing();
-
-</script>
-
-<br>
-
-<h2>Python Developer & Data Analyst</h2>
+<h2>Python Developer • Data Analyst</h2>
 
 <p>
 
-<a href="https://www.linkedin.com/in/mukesh-kumar-567284301/" class="btn btn-primary">LinkedIn</a>
-
-<a href="https://github.com/mukeshkd58" class="btn btn-white btn-outline-white">GitHub</a>
+Python Developer and Data Analyst building data driven solutions and backend applications using Python, SQL and FastAPI.
 
 </p>
 
-</div>
+<a class="btn" href="https://github.com/mukeshkd58">GitHub</a>
+
+<a class="btn" href="https://www.linkedin.com/in/mukesh-kumar-567284301/">LinkedIn</a>
 
 </section>
 
-<section id="about-section">
 
-<div class="container">
+<section class="section" id="about">
 
 <h2>About Me</h2>
 
@@ -124,196 +139,179 @@ typing();
 
 Python Developer and Data Analyst with strong experience in data analysis, exploratory data analysis (EDA), backend API development and building real world data driven applications.
 
-Currently pursuing a Master's degree in Georesource and Geoenergy at Politecnico di Torino, Italy.
+Currently pursuing a Master's degree in Georesource and Geoenergy at Politecnico di Torino Italy.
 
-Experienced in Python, SQL, FastAPI, Streamlit, Pandas and visualization tools to transform raw data into meaningful insights and build scalable data solutions across hospitality, healthcare and retail domains.
+Experienced in Python, SQL, FastAPI, Streamlit, Pandas and visualization tools to transform raw datasets into actionable insights.
 
 </p>
 
-</div>
-
 </section>
 
-<section id="tech-section">
 
-<div class="container">
+<section class="section" id="skills">
 
-<h2 class="text-center">Tech Stack</h2>
+<h2>Tech Stack</h2>
 
-<div class="row text-center">
+<div class="grid">
 
-<div class="col-md-3">
-<h4>Languages</h4>
+<div class="card">
+<h3>Languages</h3>
 <p>Python, SQL, Bash</p>
 </div>
 
-<div class="col-md-3">
-<h4>Libraries</h4>
+<div class="card">
+<h3>Libraries</h3>
 <p>Pandas, NumPy, Matplotlib, Seaborn</p>
 </div>
 
-<div class="col-md-3">
-<h4>Frameworks</h4>
+<div class="card">
+<h3>Frameworks</h3>
 <p>FastAPI, Streamlit</p>
 </div>
 
-<div class="col-md-3">
-<h4>Tools</h4>
+<div class="card">
+<h3>Tools</h3>
 <p>Git, GitHub, Power BI, VS Code</p>
 </div>
 
 </div>
 
-</div>
-
 </section>
 
-<section id="resume-section">
 
-<div class="container">
+<section class="section" id="projects">
 
-<h2>Education</h2>
+<h2>Featured Projects</h2>
 
-<h4>M.S. in Georesource and Geoenergy</h4>
-<p>Politecnico di Torino, Italy | 2025 – Present</p>
+<div class="grid">
 
-<h4>B.S. in Mining Engineering</h4>
-<p>Mehran University of Engineering & Technology | 2013 – 2017</p>
-
-</div>
-
-</section>
-
-<section id="project-section">
-
-<div class="container">
-
-<h2>Projects</h2>
+<div class="project">
 
 <h3>AtliQ Hotels Data Analysis</h3>
 
 <p>
 
-Hospitality domain analytics project analyzing hotel datasets using Python.
-Performed data cleaning, exploratory data analysis and visualization to uncover trends and improve decision making.
+Hospitality analytics project using Python and visualization tools to analyze hotel datasets and uncover revenue trends.
 
 </p>
 
-<a href="https://github.com/mukeshkd58/AtliQ-Hotels-Data-Analysis">GitHub</a>
+<a class="btn" href="https://github.com/mukeshkd58/AtliQ-Hotels-Data-Analysis">View Project</a>
 
-<hr>
+</div>
 
-<h3>Expense Tracking System (FastAPI + Streamlit)</h3>
+
+<div class="project">
+
+<h3>Expense Tracking System</h3>
 
 <p>
 
-Full stack expense tracking application built using FastAPI backend and Streamlit frontend with MySQL database.
-Tracks daily spending and visualizes financial insights using Pandas.
+Full stack expense tracking application using FastAPI backend and Streamlit frontend with MySQL database.
 
 </p>
 
-<a href="https://github.com/mukeshkd58/Project-Expensive-Tracking">GitHub</a>
+<a class="btn" href="https://github.com/mukeshkd58/Project-Expensive-Tracking">View Project</a>
 
-<hr>
+</div>
 
-<h3>Medical Data Extraction System</h3>
+
+<div class="project">
+
+<h3>Medical Data Extraction</h3>
 
 <p>
 
-Python system that extracts structured medical information from scanned prescriptions using OpenCV, Regex and custom Python classes.
+Python based system extracting medical prescription data using OpenCV, Regex and automated tests.
 
 </p>
 
-<a href="https://github.com/mukeshkd58/Medical-Data-Extraction-Project">GitHub</a>
+<a class="btn" href="https://github.com/mukeshkd58/Medical-Data-Extraction-Project">View Project</a>
 
-<hr>
+</div>
+
+
+<div class="project">
 
 <h3>Customer Shopping Behavior Analysis</h3>
 
 <p>
 
-End to end analytics project using SQL, Python and Power BI to analyze retail transactions and identify customer behaviour insights.
+Retail analytics project using SQL, Python and Power BI to analyze customer purchasing patterns.
 
 </p>
 
-<a href="https://github.com/mukeshkd58/Customers_Shopping_Behavior-Python-SQL-PowerBI">GitHub</a>
+<a class="btn" href="https://github.com/mukeshkd58/Customers_Shopping_Behavior-Python-SQL-PowerBI">View Project</a>
+
+</div>
 
 </div>
 
 </section>
 
-<section id="certification-section">
 
-<div class="container text-center">
+<section class="section" id="certifications">
 
 <h2>Certifications</h2>
 
-<h4>Python: Beginner to Advance for Data Professionals</h4>
+<div class="card">
 
-<p>Python programming certification with hands on projects in hospitality analytics and expense tracking systems.</p>
-
-<a href="https://codebasics.io/certificate/CB-48-484522">View Certificate</a>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container text-center">
-
-<h2>GitHub Stats</h2>
-
-<img src="https://github-readme-stats.vercel.app/api?username=mukeshkd58&show_icons=true&theme=dark">
-
-<br><br>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mukeshkd58&layout=compact&theme=dark">
-
-</div>
-
-</section>
-
-<section id="contact-section">
-
-<div class="container text-center">
-
-<h2>Contact</h2>
-
-<h3>Open to Data Analyst / Python Developer Opportunities</h3>
+<h3>Python: Beginner to Advance for Data Professionals</h3>
 
 <p>
 
-Currently pursuing Master's at Politecnico di Torino and actively seeking internship or entry level roles in Data Analytics or Python Development.
+Python programming certification with hands on projects in hospitality analytics and expense tracking.
 
 </p>
 
-<p>Location: Turin, Italy</p>
+<a class="btn" href="https://codebasics.io/certificate/CB-48-484522">View Certificate</a>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>GitHub Stats</h2>
+
+<img src="https://github-readme-stats.vercel.app/api?username=mukeshkd58&show_icons=true&theme=tokyonight">
+
+<br><br>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mukeshkd58&layout=compact&theme=tokyonight">
+
+</section>
+
+
+<section class="section" id="contact">
+
+<h2>Contact</h2>
+
+<p>
+
+Open to Data Analyst / Python Developer roles and internships.
+
+</p>
+
+<p>Location: Turin Italy</p>
 
 <p>Email: mukeshkumardharani58@gmail.com</p>
 
 <p>Phone: +39 393 259 8912</p>
 
-<p>
+<a class="btn" href="https://github.com/mukeshkd58">GitHub</a>
 
-<a href="https://www.linkedin.com/in/mukesh-kumar-567284301/">LinkedIn</a> |
-<a href="https://github.com/mukeshkd58">GitHub</a>
-
-</p>
-
-</div>
+<a class="btn" href="https://www.linkedin.com/in/mukesh-kumar-567284301/">LinkedIn</a>
 
 </section>
 
+
 <footer>
 
-<div class="container text-center">
-
 <p>© 2026 Mukesh Kumar Portfolio</p>
-
-</div>
 
 </footer>
 
 </body>
+
 </html>
