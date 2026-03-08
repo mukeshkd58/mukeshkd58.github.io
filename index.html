@@ -1,92 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Mukesh Kumar Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-<head>
-
-<title>Mukesh Kumar | Python Developer & Data Analyst</title>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/ionicons.min.css">
+<link rel="stylesheet" href="css/flaticon.css">
+<link rel="stylesheet" href="css/icomoon.css">
+<link rel="stylesheet" href="css/style.css">
 
 <style>
 
-body{
-font-family:Poppins;
-margin:0;
-background:#0f172a;
+#typing-animation {
+font-size:30px;
+font-weight:bold;
 color:white;
 }
 
-nav{
-display:flex;
-justify-content:space-between;
-padding:20px 10%;
-background:#020617;
-position:sticky;
-top:0;
+.zoom-effect{
+overflow:hidden;
+transition:transform .3s;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-}
-
-.hero{
-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-
-.hero h1{
-font-size:48px;
-}
-
-.btn{
-background:#6366f1;
-padding:12px 25px;
-border-radius:6px;
-text-decoration:none;
-color:white;
-margin:10px;
-display:inline-block;
-}
-
-.section{
-padding:80px 10%;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-.card{
-background:#1e293b;
-padding:25px;
-border-radius:10px;
-}
-
-.project{
-background:#1e293b;
-padding:20px;
-border-radius:10px;
-}
-
-footer{
-text-align:center;
-padding:30px;
-background:#020617;
-}
-
-img{
-max-width:100%;
+.zoom-effect:hover{
+transform:scale(1.1);
 }
 
 </style>
@@ -95,224 +41,176 @@ max-width:100%;
 
 <body>
 
-<nav>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar site-navbar-target">
 
-<h3>Mukesh Kumar</h3>
+<div class="container">
+
+<a class="navbar-brand" href="#">Mukesh Kumar</a>
 
 <div>
 
-<a href="#about">About</a>
-<a href="#skills">Tech Stack</a>
-<a href="#projects">Projects</a>
-<a href="#certifications">Certifications</a>
-<a href="#contact">Contact</a>
+<ul class="navbar-nav ml-auto">
+
+<li class="nav-item"><a href="#home-section" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
+<li class="nav-item"><a href="#resume-section" class="nav-link">Resume</a></li>
+<li class="nav-item"><a href="#project-section" class="nav-link">Projects</a></li>
+<li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
+
+</ul>
+
+</div>
 
 </div>
 
 </nav>
 
-<section class="hero">
+<section id="home-section" class="hero">
 
-<h1>Hi I'm Mukesh Kumar</h1>
+<div class="container text-center">
 
-<h2 id="typing"></h2>
+<h1>Hi, I'm <span>Mukesh Kumar</span></h1>
 
-<p style="max-width:600px">
+<span id="typing-animation"></span>
 
-Python Developer & Data Analyst building data driven applications using Python, SQL, FastAPI and modern analytics tools.
+<script>
+
+const typingTexts=[
+"Python Developer",
+"Data Analyst",
+"FastAPI Backend Developer"
+];
+
+let i=0;
+
+function typing(){
+document.getElementById("typing-animation").innerHTML=typingTexts[i];
+i=(i+1)%typingTexts.length;
+setTimeout(typing,2000);
+}
+
+typing();
+
+</script>
+
+<br>
+
+<h2>Python Developer & Data Analyst</h2>
+
+<p>
+
+<a href="https://www.linkedin.com/in/mukesh-kumar-567284301/" class="btn btn-primary py-3 px-4">LinkedIn</a>
+
+<a href="https://github.com/mukeshkd58" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a>
+
+<a href="https://drive.google.com/drive/my-drive" target="_blank" class="btn btn-success py-3 px-4">
+
+Download Resume
+
+</a>
 
 </p>
 
-<a class="btn" href="https://github.com/mukeshkd58">GitHub</a>
-
-<a class="btn" href="https://www.linkedin.com/in/mukesh-kumar-567284301/">LinkedIn</a>
-
-<a class="btn" href="https://drive.google.com/drive/my-drive" target="_blank">Download Resume</a>
+</div>
 
 </section>
 
-<section class="section" id="about">
+<section id="about-section">
+
+<div class="container">
 
 <h2>About Me</h2>
 
-<p style="text-align:center; max-width:800px; margin:auto;">
+<p>
 
-Python Developer and Data Analyst with hands-on experience in data analysis, exploratory data analysis (EDA), backend API development and building real world data driven applications.
-
-Currently pursuing a Master's degree in Georesource and Geoenergy at Politecnico di Torino Italy.
-
-Skilled in Python, SQL, FastAPI, Streamlit, Pandas and visualization tools to transform raw datasets into actionable insights.
+Python Developer and Data Analyst with experience in data analysis, exploratory data analysis (EDA), API development and building data driven applications using Python.
 
 </p>
 
+</div>
+
 </section>
 
-<section class="section" id="skills">
+<section id="resume-section">
 
-<h2>Tech Stack</h2>
+<div class="container">
 
-<div class="grid">
+<h2>Education</h2>
 
-<div class="card">
-<h3>Languages</h3>
-<p>Python, SQL, Bash</p>
-</div>
+<h4>M.S. in Georesource and Geoenergy</h4>
+<p>Politecnico di Torino | 2025 – Present</p>
 
-<div class="card">
-<h3>Libraries</h3>
-<p>Pandas, NumPy, Matplotlib, Seaborn</p>
-</div>
+<h4>B.S. in Mining Engineering</h4>
+<p>Mehran University | 2013 – 2017</p>
 
-<div class="card">
-<h3>Frameworks</h3>
-<p>FastAPI, Streamlit</p>
-</div>
+<br>
 
-<div class="card">
-<h3>Tools</h3>
-<p>Git, GitHub, Power BI, VS Code</p>
-</div>
+<a href="YOUR_RESUME_LINK" target="_blank" class="btn btn-primary py-4 px-5">
+
+Download Resume
+
+</a>
 
 </div>
 
 </section>
 
-<section class="section" id="projects">
+<section id="project-section">
 
-<h2>Featured Projects</h2>
+<div class="container">
 
-<div class="grid">
-
-<div class="project">
+<h2>Projects</h2>
 
 <h3>AtliQ Hotels Data Analysis</h3>
 
-<p>
+<p>Hotel dataset analytics project using Python and visualization tools.</p>
 
-Hospitality domain analytics project using Python and visualization tools to analyze hotel datasets and uncover revenue trends.
+<a href="https://github.com/mukeshkd58/AtliQ-Hotels-Data-Analysis">GitHub</a>
 
-</p>
-
-<a class="btn" href="https://github.com/mukeshkd58/AtliQ-Hotels-Data-Analysis">View Project</a>
-
-</div>
-
-
-<div class="project">
+<hr>
 
 <h3>Expense Tracking System</h3>
 
-<p>
+<p>Full stack expense tracking application using FastAPI and Streamlit.</p>
 
-Full stack expense tracking system using FastAPI backend and Streamlit frontend with MySQL database.
+<a href="https://github.com/mukeshkd58/Project-Expensive-Tracking">GitHub</a>
 
-</p>
-
-<a class="btn" href="https://github.com/mukeshkd58/Project-Expensive-Tracking">View Project</a>
-
-</div>
-
-
-<div class="project">
+<hr>
 
 <h3>Medical Data Extraction</h3>
 
-<p>
+<p>Python system extracting medical prescription data using OpenCV.</p>
 
-Python system extracting medical prescription data using OpenCV and Regex.
+<a href="https://github.com/mukeshkd58/Medical-Data-Extraction-Project">GitHub</a>
 
-</p>
-
-<a class="btn" href="https://github.com/mukeshkd58/Medical-Data-Extraction-Project">View Project</a>
-
-</div>
-
-
-<div class="project">
+<hr>
 
 <h3>Customer Shopping Behavior Analysis</h3>
 
-<p>
+<p>Retail analytics project using SQL, Python and Power BI.</p>
 
-Retail analytics project using SQL, Python and Power BI to analyze purchasing patterns.
-
-</p>
-
-<a class="btn" href="https://github.com/mukeshkd58/Customers_Shopping_Behavior-Python-SQL-PowerBI">View Project</a>
-
-</div>
+<a href="https://github.com/mukeshkd58/Customers_Shopping_Behavior-Python-SQL-PowerBI">GitHub</a>
 
 </div>
 
 </section>
 
-<section class="section" id="certifications">
+<section id="contact-section">
 
-<h2>Certifications</h2>
-
-<div class="card" style="max-width:500px;margin:auto;text-align:center;">
-
-<h3>Python: Beginner to Advance for Data Professionals</h3>
-
-<p>
-
-Python programming certification including hospitality analytics and expense tracking projects.
-
-</p>
-
-<a class="btn" href="https://codebasics.io/certificate/CB-48-484522">View Certificate</a>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>GitHub Stats</h2>
-
-<div style="text-align:center;">
-
-<img src="https://github-readme-stats.vercel.app/api?username=mukeshkd58&show_icons=true&theme=tokyonight">
-
-<br><br>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mukeshkd58&layout=compact&theme=tokyonight">
-
-</div>
-
-</section>
-
-<section class="section" id="contact">
+<div class="container text-center">
 
 <h2>Contact</h2>
 
-<p style="text-align:center">
+<p>Turin, Italy</p>
 
-Open to Data Analyst / Python Developer opportunities.
+<p>Email: mukeshkumardharani58@gmail.com</p>
 
-</p>
+<p>
 
-<p style="text-align:center">
-
-Turin Italy  
-<br>
-Email: mukeshkumardharani58@gmail.com
+<a href="https://github.com/mukeshkd58">GitHub</a> |
+<a href="https://www.linkedin.com/in/mukesh-kumar-567284301/">LinkedIn</a>
 
 </p>
-
-<div style="max-width:500px;margin:auto;">
-
-<form>
-
-<input type="text" placeholder="Your Name">
-
-<input type="email" placeholder="Email">
-
-<textarea rows="5" placeholder="Message"></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
 
 </div>
 
@@ -320,34 +218,13 @@ Email: mukeshkumardharani58@gmail.com
 
 <footer>
 
+<div class="container text-center">
+
 <p>© 2026 Mukesh Kumar Portfolio</p>
 
+</div>
+
 </footer>
-
-<script>
-
-const text=[
-"Python Developer",
-"Data Analyst",
-"FastAPI Backend Developer",
-"Data Analytics Enthusiast"
-];
-
-let i=0;
-
-function typing(){
-
-document.getElementById("typing").innerHTML=text[i];
-
-i=(i+1)%text.length;
-
-setTimeout(typing,2000);
-
-}
-
-typing();
-
-</script>
 
 </body>
 
