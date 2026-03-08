@@ -3,73 +3,48 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Mukesh Kumar | Python Developer & Data Analyst</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-font-family:Poppins;
-}
-
 body{
+font-family:Poppins;
+margin:0;
 background:#0f172a;
 color:white;
 }
 
-/* NAVBAR */
-
 nav{
 display:flex;
 justify-content:space-between;
-align-items:center;
 padding:20px 10%;
 background:#020617;
 position:sticky;
 top:0;
-z-index:1000;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:25px;
-font-size:14px;
+margin-left:20px;
 }
-
-nav a:hover{
-color:#6366f1;
-}
-
-/* HERO */
 
 .hero{
-height:100vh;
+height:90vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:0 20px;
 }
 
 .hero h1{
-font-size:52px;
-margin-bottom:10px;
-}
-
-.hero h2{
-font-weight:400;
-margin-bottom:20px;
-color:#cbd5f5;
+font-size:48px;
 }
 
 .btn{
@@ -80,25 +55,11 @@ text-decoration:none;
 color:white;
 margin:10px;
 display:inline-block;
-transition:0.3s;
 }
-
-.btn:hover{
-background:#4f46e5;
-}
-
-/* SECTION */
 
 .section{
 padding:80px 10%;
 }
-
-.section h2{
-text-align:center;
-margin-bottom:50px;
-}
-
-/* GRID */
 
 .grid{
 display:grid;
@@ -106,57 +67,22 @@ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
 }
 
-/* CARD */
-
 .card{
 background:#1e293b;
 padding:25px;
 border-radius:10px;
-transition:0.3s;
 }
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-/* PROJECT */
 
 .project{
 background:#1e293b;
-padding:25px;
+padding:20px;
 border-radius:10px;
 }
-
-.project h3{
-margin-bottom:10px;
-}
-
-/* CONTACT FORM */
-
-input, textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
-border-radius:5px;
-border:none;
-}
-
-button{
-background:#6366f1;
-border:none;
-padding:12px 20px;
-color:white;
-border-radius:5px;
-cursor:pointer;
-}
-
-/* FOOTER */
 
 footer{
 text-align:center;
 padding:30px;
 background:#020617;
-margin-top:40px;
 }
 
 img{
@@ -169,8 +95,6 @@ max-width:100%;
 
 <body>
 
-<!-- NAVBAR -->
-
 <nav>
 
 <h3>Mukesh Kumar</h3>
@@ -181,15 +105,11 @@ max-width:100%;
 <a href="#skills">Tech Stack</a>
 <a href="#projects">Projects</a>
 <a href="#certifications">Certifications</a>
-<a href="#github">GitHub</a>
 <a href="#contact">Contact</a>
 
 </div>
 
 </nav>
-
-
-<!-- HERO -->
 
 <section class="hero">
 
@@ -197,9 +117,9 @@ max-width:100%;
 
 <h2 id="typing"></h2>
 
-<p>
+<p style="max-width:600px">
 
-Python Developer and Data Analyst building data driven applications using Python, SQL and FastAPI.
+Python Developer & Data Analyst building data driven applications using Python, SQL, FastAPI and modern analytics tools.
 
 </p>
 
@@ -207,12 +127,9 @@ Python Developer and Data Analyst building data driven applications using Python
 
 <a class="btn" href="https://www.linkedin.com/in/mukesh-kumar-567284301/">LinkedIn</a>
 
-<a class="btn" href="#">Download Resume</a>
+<a class="btn" href="https://drive.google.com/drive/my-drive" target="_blank">Download Resume</a>
 
 </section>
-
-
-<!-- ABOUT -->
 
 <section class="section" id="about">
 
@@ -220,7 +137,7 @@ Python Developer and Data Analyst building data driven applications using Python
 
 <p style="text-align:center; max-width:800px; margin:auto;">
 
-Python Developer and Data Analyst with experience in data analysis, EDA, backend API development and building real world data driven applications.
+Python Developer and Data Analyst with hands-on experience in data analysis, exploratory data analysis (EDA), backend API development and building real world data driven applications.
 
 Currently pursuing a Master's degree in Georesource and Geoenergy at Politecnico di Torino Italy.
 
@@ -229,9 +146,6 @@ Skilled in Python, SQL, FastAPI, Streamlit, Pandas and visualization tools to tr
 </p>
 
 </section>
-
-
-<!-- TECH STACK -->
 
 <section class="section" id="skills">
 
@@ -263,9 +177,6 @@ Skilled in Python, SQL, FastAPI, Streamlit, Pandas and visualization tools to tr
 
 </section>
 
-
-<!-- PROJECTS -->
-
 <section class="section" id="projects">
 
 <h2>Featured Projects</h2>
@@ -276,37 +187,56 @@ Skilled in Python, SQL, FastAPI, Streamlit, Pandas and visualization tools to tr
 
 <h3>AtliQ Hotels Data Analysis</h3>
 
-<p>Hospitality analytics project using Python to analyze hotel datasets and uncover revenue trends.</p>
+<p>
+
+Hospitality domain analytics project using Python and visualization tools to analyze hotel datasets and uncover revenue trends.
+
+</p>
 
 <a class="btn" href="https://github.com/mukeshkd58/AtliQ-Hotels-Data-Analysis">View Project</a>
 
 </div>
 
+
 <div class="project">
 
 <h3>Expense Tracking System</h3>
 
-<p>Full stack expense tracking system using FastAPI backend and Streamlit frontend with MySQL database.</p>
+<p>
+
+Full stack expense tracking system using FastAPI backend and Streamlit frontend with MySQL database.
+
+</p>
 
 <a class="btn" href="https://github.com/mukeshkd58/Project-Expensive-Tracking">View Project</a>
 
 </div>
 
+
 <div class="project">
 
 <h3>Medical Data Extraction</h3>
 
-<p>Python system extracting medical prescription data using OpenCV and Regex.</p>
+<p>
+
+Python system extracting medical prescription data using OpenCV and Regex.
+
+</p>
 
 <a class="btn" href="https://github.com/mukeshkd58/Medical-Data-Extraction-Project">View Project</a>
 
 </div>
 
+
 <div class="project">
 
 <h3>Customer Shopping Behavior Analysis</h3>
 
-<p>Retail analytics project using SQL, Python and Power BI to analyze purchasing patterns.</p>
+<p>
+
+Retail analytics project using SQL, Python and Power BI to analyze purchasing patterns.
+
+</p>
 
 <a class="btn" href="https://github.com/mukeshkd58/Customers_Shopping_Behavior-Python-SQL-PowerBI">View Project</a>
 
@@ -315,9 +245,6 @@ Skilled in Python, SQL, FastAPI, Streamlit, Pandas and visualization tools to tr
 </div>
 
 </section>
-
-
-<!-- CERTIFICATION -->
 
 <section class="section" id="certifications">
 
@@ -339,10 +266,7 @@ Python programming certification including hospitality analytics and expense tra
 
 </section>
 
-
-<!-- GITHUB STATS -->
-
-<section class="section" id="github">
+<section class="section">
 
 <h2>GitHub Stats</h2>
 
@@ -358,9 +282,6 @@ Python programming certification including hospitality analytics and expense tra
 
 </section>
 
-
-<!-- CONTACT -->
-
 <section class="section" id="contact">
 
 <h2>Contact</h2>
@@ -368,6 +289,14 @@ Python programming certification including hospitality analytics and expense tra
 <p style="text-align:center">
 
 Open to Data Analyst / Python Developer opportunities.
+
+</p>
+
+<p style="text-align:center">
+
+Turin Italy  
+<br>
+Email: mukeshkumardharani58@gmail.com
 
 </p>
 
@@ -387,15 +316,7 @@ Open to Data Analyst / Python Developer opportunities.
 
 </div>
 
-<p style="text-align:center;margin-top:20px">
-
-Turin Italy |  
-mukeshkumardharani58@gmail.com
-
-</p>
-
 </section>
-
 
 <footer>
 
@@ -403,12 +324,14 @@ mukeshkumardharani58@gmail.com
 
 </footer>
 
-
-<!-- TYPING ANIMATION -->
-
 <script>
 
-const text=["Python Developer","Data Analyst","FastAPI Backend Developer","Data Analytics Enthusiast"];
+const text=[
+"Python Developer",
+"Data Analyst",
+"FastAPI Backend Developer",
+"Data Analytics Enthusiast"
+];
 
 let i=0;
 
@@ -426,6 +349,6 @@ typing();
 
 </script>
 
-
 </body>
+
 </html>
